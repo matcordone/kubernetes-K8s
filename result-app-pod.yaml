@@ -3,11 +3,11 @@ kind: Pod
 metadata:
   name: result
   labels:
-    app.kubernetes.io/name: result
+    app: result
 spec:
   containers:
   - name: result
     image: dockersamples/examplevotingapp_result
     ports:
-      - containerPort: 80
-        name: result
+    - containerPort: 80
+      name: result
